@@ -1,0 +1,186 @@
+:root {
+    --vino: #5c0a1e;
+    --vino-oscuro: #2b040d;
+    --vino-claro: #8e1b33;
+    --crema: #f4e4c9;
+    --dorado: #d9a441;
+}
+
+body {
+    background-color: var(--vino-oscuro);
+    color: var(--crema);
+}
+
+/* titulos en letra cursiva */
+h1, h2, h3, h4, h5,
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.titulo-seccion {
+    color: var(--dorado);
+    text-shadow: 3px 3px 0 var(--vino);
+}
+
+/* franjas retro debajo de los titulos */
+.franjas {
+    width: 160px;
+    height: 12px;
+    margin: 0 auto 2rem auto;
+    background: linear-gradient(
+        to bottom,
+        var(--dorado) 0 4px,
+        var(--vino-claro) 4px 8px,
+        var(--crema) 8px 12px
+    );
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--vino);
+    border-bottom: 4px solid var(--dorado);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    color: var(--dorado) !important;
+}
+
+.navbar .nav-link {
+    color: var(--crema);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--dorado);
+}
+
+/* hero */
+.hero-panel {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    min-height: 420px;
+    overflow: hidden;
+    background: linear-gradient(rgba(43, 4, 13, 0.55), rgba(43, 4, 13, 0.9)),
+        url('../img/countach.jpg') center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-panel h1 {
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    color: var(--crema);
+    text-shadow: 4px 4px 0 var(--vino-claro), 8px 8px 0 var(--vino-oscuro);
+}
+
+.hero-panel .lead {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--dorado);
+}
+
+/* botones */
+.btn-vino {
+    background-color: var(--vino-claro);
+    border: 2px solid var(--dorado);
+    color: var(--crema);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-vino:hover {
+    background-color: var(--dorado);
+    border-color: var(--dorado);
+    color: var(--vino-oscuro);
+}
+
+/* tarjetas */
+.card {
+    background-color: var(--vino);
+    color: var(--crema);
+    border: 2px solid var(--vino-claro);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--dorado);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--dorado);
+}
+
+.badge-anio {
+    background-color: var(--dorado);
+    color: var(--vino-oscuro);
+}
+
+/* secciones */
+.seccion-alterna {
+    background-color: var(--vino);
+}
+
+.foto-marco {
+    border: 6px solid var(--crema);
+    box-shadow: 10px 10px 0 var(--vino-claro);
+}
+
+/* tabla */
+.table {
+    --bs-table-bg: var(--vino);
+    --bs-table-color: var(--crema);
+    --bs-table-border-color: var(--vino-claro);
+    --bs-table-striped-bg: var(--vino-oscuro);
+    --bs-table-striped-color: var(--crema);
+}
+
+.table thead th {
+    background-color: var(--vino-claro);
+    color: var(--dorado);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+/* formulario */
+.form-control,
+.form-select {
+    background-color: var(--vino-oscuro);
+    border: 2px solid var(--vino-claro);
+    color: var(--crema);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--vino-oscuro);
+    border-color: var(--dorado);
+    color: var(--crema);
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #b89a8a;
+}
+
+/* footer */
+footer {
+    background-color: #1a0208;
+    border-top: 4px solid var(--dorado);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--dorado);
+}
