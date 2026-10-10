@@ -139,6 +139,10 @@ h4 {
 }
 
 /* secciones */
+section {
+    scroll-margin-top: 70px;
+}
+
 .seccion-alterna {
     background-color: var(--vino);
 }
